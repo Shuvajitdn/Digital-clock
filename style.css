@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+  }
+  
+  .clock {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #222, #000);
+    border: 6px solid transparent;
+    overflow: hidden;
+  }
+  
+  .circle span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+  }
+  
+  .circle p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #aaaaaa;
+    z-index: 1;
+  }
+  
+  /* Dot Indicators */
+  .indicator-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  #hours-circle {
+    border: 6px solid #ff006e;
+    background: radial-gradient(circle, #330000, #990033);
+  }
+  
+  #minutes-circle {
+    border: 6px solid #ffd700;
+    background: radial-gradient(circle, #333300, #999900);
+  }
+  
+  #seconds-circle {
+    border: 6px solid #00ff7f;
+    background: radial-gradient(circle, #003300, #00cc66);
+  }
+  
+  /* Specific Colors for Dot Indicators */
+  #hours-dot {
+    background-color: #ff006e;
+  }
+  
+  #minutes-dot {
+    background-color: #ffd700;
+  }
+  
+  #seconds-dot {
+    background-color: #00ff7f;
+  }
+  
+  .ampm {
+    font-size: 24px;
+    color: #cccccc;
+    margin-top: 35px;
+  }
+  
